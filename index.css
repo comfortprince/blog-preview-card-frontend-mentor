@@ -1,0 +1,95 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+
+    --yellow: hsl(47, 88%, 63%);
+
+    /* Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Figtree, sans-serif;
+    background-color: var(--yellow);
+    height: 100vh;
+    color: var(--black);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+}
+
+h1{
+    font-size: large;
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.card{
+    width: 20rem;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0.6rem 0.6rem;
+}
+
+.card-heading:hover{
+    color: var(--yellow);
+}
+
+.card-hover-shadow{
+    box-shadow: 0.9rem 0.9rem;
+}
+
+.card-image{
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-btn{
+    border-radius: 0.2rem;
+    font-weight: 600;
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--yellow);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.avatar{
+    width: 2rem;
+    height: auto;
+}
+
+.username{
+    color: var(--black);
+}
